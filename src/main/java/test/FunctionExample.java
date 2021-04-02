@@ -10,7 +10,7 @@ public class FunctionExample {
 
         List<String> list = List.of("kit", "kat", "Shake");
 
-        Function<String, Integer> function = e -> e.length();
+        Function<String, Integer> function = String :: length;
 
         List<Integer> newList = map(list, function);
 

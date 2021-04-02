@@ -8,7 +8,7 @@ public class ConsumerExamples {
     public static void main(String[] args) {
         List<Integer> list = List.of(23,67,8,23,67,89,90);
 
-        Consumer<Integer> consumer = e -> System.out.println(e);
+        Consumer<Integer> consumer = System.out :: println;
         //consumer.accept(56);
 
         printElements(list, consumer);

@@ -1,15 +1,23 @@
 package test;
 
-import java.util.List;
 import java.util.function.BiFunction;
 
 public class BiFunctionExample {
     public static void main(String[] args) {
 
-        BiFunction<String, String, Integer> biFunction = (a, b) -> (a + b).length();
+        BiFunction<String, String, String> biFunction = A_Class :: staticMethod;
 
         System.out.println(biFunction.apply("hello", "world"));
 
 
     }
 }
+
+    class A_Class {
+
+        static String staticMethod(String a, String b){
+            return a + b ;
+        }
+
+    }
+
