@@ -16,6 +16,12 @@ public class ListIntegerTest {
 
         System.out.println("#######################");
 
+        System.out.println("order integer list");
+        int suma = myLists.stream().filter(n -> n>0).mapToInt(Integer::intValue).sum();
+        System.out.println(suma);
+
+        System.out.println("#######################");
+
         System.out.println("order integer list reversed");
         List<Integer> listSortedReversed = myLists.stream().sorted(Collections.reverseOrder()).toList();
         System.out.println(listSortedReversed);
